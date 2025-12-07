@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FocusFlow - Gestão de Produtividade</title>
+
+  <!-- Fonte principal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Logo -->
+      <div class="logo">
+        <span class="logo-mark">F</span>
+        <span class="logo-text">FocusFlow</span>
+      </div>
+
+      <!-- Botão hambúrguer (mobile) -->
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Abrir ou fechar o menu de navegação"
+      >
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+
+      <!-- Navegação + botão de tema Nesta sessão a ideia é que 
+       o tema mude escurecendo e clareando de acordo 
+       a mudança entre dia ou noite   -->
+      <div class="header-right">
+        <nav class="main-nav">
+          <a href="#beneficios" class="nav-link">Benefícios</a>
+          <a href="#ciclo" class="nav-link">Ciclo menstrual</a>
+          <a href="#cta" class="nav-link">Plano</a>
+          <a href="#login" class="nav-link">Login</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Alternar tema entre dia e noite"
+        >
+          <span class="theme-toggle-icon">🌙</span>
+          <span class="theme-toggle-text">Modo noite</span>
+        </button>
+      </div>
+    </div>
+    
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-tag">Organização suave para o seu dia</p>
+          <h1 class="hero-title">
+            Organize sua rotina com carinho, foco e equilíbrio.
+          </h1>
+          <p class="hero-subtitle">
+            O FocusFlow ajuda você a planejar tarefas, cuidar do seu tempo e
+            acompanhar seu bem-estar em um só lugar.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#cta" class="btn btn-primary">Começar agora</a>
+            <a href="#beneficios" class="btn btn-secondary">Ver benefícios</a>
+          </div>
+
+          <p class="hero-note">
+            Sem cartão de crédito • Ideal para estudantes, freelancers e mulheres em rotina intensa
+          </p>
+        </div>
+
+        <div class="hero-illustration">
+          <div class="card">
+            <h2 class="card-title">Resumo do seu dia</h2>
+            <ul class="task-list">
+              <li class="task-item">
+                <span class="task-status task-done"></span>
+                <span class="task-text">Alongar e tomar café da manhã</span>
+              </li>
+              <li class="task-item">
+                <span class="task-status task-progress"></span>
+                <span class="task-text">Estudar 2h de programação</span>
+              </li>
+              <li class="task-item">
+                <span class="task-status task-pending"></span>
+                <span class="task-text">Responder mensagens importantes</span>
+              </li>
+            </ul>
+            <div class="card-footer">
+              <span class="card-label">Foco do dia</span>
+              <span class="card-value">Equilíbrio &amp; bem-estar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BENEFÍCIOS ========== -->
+    <section class="section" id="beneficios">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Por que usar o FocusFlow?</h2>
+          <p class="section-subtitle">
+            Pensado para uma rotina leve, visual delicado e foco no que realmente
+            importa no seu dia.
+          </p>
+        </header>
+
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <h3 class="benefit-title">Planejamento gentil</h3>
+            <p class="benefit-text">
+              Organize seu dia em blocos de foco sem se sobrecarregar, respeitando
+              o seu ritmo.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <h3 class="benefit-title">Visual aconchegante</h3>
+            <p class="benefit-text">
+              Cores suaves e tipografia clara para você se sentir bem enquanto
+              cuida das suas tarefas.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <h3 class="benefit-title">Rotina sustentável</h3>
+            <p class="benefit-text">
+              Acompanhe pequenas vitórias diárias e crie hábitos que funcionam
+              no longo prazo.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CICLO MENSTRUAL ========== -->
+    <section class="section section-soft" id="ciclo">
+      <div class="container ciclo-layout">
+        <div class="ciclo-info">
+          <h2 class="section-title">Acompanhe seu ciclo menstrual</h2>
+          <p class="section-subtitle">
+            Registre fases do ciclo, sintomas e nível de energia ao longo do mês
+            para ajustar sua rotina de forma mais acolhedora.
+          </p>
+          <p class="ciclo-detail">
+            Use essa área para marcar dias do ciclo, observar padrões e alinhar
+            estudos, trabalho e autocuidado com o seu corpo.
+          </p>
+        </div>
+
+        <div class="ciclo-box">
+          <h3 class="ciclo-box-title">Resumo do ciclo (exemplo)</h3>
+          <ul class="ciclo-list">
+            <li>Dia
+  1-5: Menstruação - Baixa energia, foco em autocuidado</li>
+            <li>Dia 6-14: Fase folicular - Energia crescente, ótimo para estudos</li>
+            <li>Dia 15-21: Ovulação - Pico de energia, ideal para tarefas desafiadoras</li>
+            <li>Dia 22-28: Fase lútea - Queda de energia, foco em organização leve</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CALL TO ACTION ========== -->
+    <section class="section section-cta" id="cta">
+      <div class="container cta-content">
+        <h2 class="cta-title">Pronta para transformar sua rotina?</h2>
+        <p class="cta-subtitle">
+          Experimente o FocusFlow gratuitamente e descubra como é fácil
+          equilibrar produtividade e bem-estar.
+        </p>
+        <a href="#signup" class="btn btn-primary btn-lg">Começar agora</a>
+      </div>
+    </section>
+    <footer class="site-footer" id="contato">
+      <div class="container footer-content">
+        <p class="footer-text">
+          &copy; 2024 FocusFlow. Todos os direitos reservados.
+        </p>
+        <nav class="footer-nav">
+          <a href="#privacy" class="footer-link">Política de Privacidade</a>
+          <a href="#terms" class="footer-link">Termos de Serviço</a>
+          <a href="#contact" class="footer-link">Contato</a>
+
+
+
